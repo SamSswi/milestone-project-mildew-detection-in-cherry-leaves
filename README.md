@@ -65,6 +65,44 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
 
+* Page 1: Project Summary
+    * General Inforamtion - block of information
+    * Project Dataset description - block of information
+    * Link to the README file - block of information
+    * Business Requirements list - block of information
+
+* Page 2: Leaves Visualizer
+    * The business requirement this page answers - block of information
+    * Checkbox1 - Difference between average and variability image
+        * Short explanation of the data visualization result - information block
+        * Relevant image - image
+    * Checkbox2 - Differences between the average image of healthy leaves and leaves that have powdery mildew
+        * Short explanation of the data visualization result - information block
+        * Relevant image - image
+    * Checkbox3 - Image montage
+        * Instruction for the user to click the "Create Montage" button
+        * Selectbox - where the user can choose one label to create a montage of
+        * Create Montage button
+            * The image montage of the selected label
+* Page 3: Cherry Leaves Powdery Mildew Detector
+    * The business requirement this answers - block of information
+    * Link to the download images of cherry leaves - block of information
+    * horizontal line
+    * File uploader where the user can upload cherry leaf images in order to get a diagnosis on them
+        * Image Name - information block
+        * the leaf sample itself - image
+        * diagnosis on the leaf sample - information block
+        * the diagnosis probability - barplot
+        * Table with the analysis report on all uploaded images - dataframe
+        * Download report link
+* Page 4: Project Hypotheses
+    * A hypothesis and its validation - information block
+* Page 5: ML Performance Metrics
+    * Train, Validation and Test Set: Label Frequencies plot - image
+    * Model History: Accuracy and Loss Line Graph  - image
+    * Model Accuracy and Loss table - pkl
+
+
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
