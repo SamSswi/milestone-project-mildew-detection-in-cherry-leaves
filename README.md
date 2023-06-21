@@ -46,6 +46,15 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
+* 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+    * As a Data Practitioner I can clean and prepare the collected data then split it into training, validation, and test sets so that further analysis and model training can be done on it.
+    * As a client I want to display the 'mean' and 'standard deviation' images for healthy and powdery mildew-containing cherry leaves so that I can intuitively differentiate cherry leaves
+    * As a Client I want to display the difference between an average cherry leaf that is healthy and a cherry leaf that contains powdery mildew so that I can visually differentiate cherry leaves
+    * As a Client I want to **display an image montage for healthy and powdery mildew-containing cherry leaves ** so that I can visually differentiate cherry leaves
+* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+    * As a client I want to build an ML model and generate reports
+    * As a client I want to predict if a given cherry leaf is healthy or contains powdery mildew.
+
 
 ## ML Business Case
 * In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
