@@ -1,7 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Gitpod Template Instructions
-
 Welcome,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
@@ -22,23 +18,29 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
-
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). I then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset contains 4208 images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 
 ## Business Requirements
-The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
+The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
 
 To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
-
 
 * 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* Hypothesis 1: There are visible patterns in the cherry leaf images that can be used to distinguish between healthy and powdery mildew affected leaves.
+    * Validation: The Average Image and Variability Image revealed subtle hints the powdery mildew-affected leaves have pale speckles on them The Difference between Averages study did not reveal any clear pattern to differentiate between the two labels. An Image Montage shows that typically the cherry leaves that have powdery mildew, have superficial white growths and in some cases, their shape is deformed.
+
+* Hypothesis 2: Neural Networks can effectively map the relationships between the features extracted from cherry leaf images and the corresponding labels (healthy or powdery mildew).
+    * Validation: A Convolutional Neural Network was used to map the relationships between the features extracted from cherry leaf images and the corresponding labels (healthy or powdery mildew). The usage of a Convolutional Neural Network was justified by its main advantages as efficient image processing, high accuracy rates, robustness to noise, and automated feature extraction. The trained Neural Network has an accuracy of 99.88% on the unseen data from the test set.
+* Hypothesis 3: Reducing the image shape to smaller dimensions (e.g., 100x100 or 50x50) will not significantly impact the model's performance in terms of accuracy.
+    * The model was trained on images resized to 100x100px, and the accuracy of its performance on new unknown data was 99.88%.
+* Hypothesis 4: The model performance meets the project requirement of 97% accuracy, as agreed upon with the client.
+    * After the evaluation of the model on a separate test dataset, the accuracy of the model was 99.88%. These metrics satisfy the requirement of 97% accuracy.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
