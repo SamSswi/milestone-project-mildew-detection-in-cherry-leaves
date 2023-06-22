@@ -153,6 +153,60 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Main Data Analysis and Machine Learning Libraries
 * Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
+* Python Standard Library - 
+* streamlit
+    * used for building the dashboard
+    * example:
+        st.info(' The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.')
+* pandas
+    * used for data manipulation, data analysis, and data preprocessing.
+    * example: 
+        * creating a dataframe from a list of pd.Series objects
+        df_freq = pd.DataFrame(freq_list)
+* numpy
+    * used its wide range of methods for performing array operations
+    * example
+        * checking whether the labels exist in the set of unique labels
+        if (label_1 not in np.unique(y)) or (label_2 not in np.unique(y)):
+            print(f"Either label {label_1} or label {label_2}, are not in {np.unique(y)} ")
+            return
+* seaborn
+    * used to set the style of the plot and create a barplot with the barplot() function.
+    * example:
+        * sns.set_style("whitegrid")
+        * sns.barplot(data=df_freq, x='Set', y='Frequency')
+* matplotlib
+    * used for creating data visualizations in various formats
+    * example:
+        * fig, axes = plt.subplots(nrows=1, ncols=2, figsize=figsize)<br>
+        axes[0].set_title('Average Image')<br>
+        axes[0].imshow(avg_image)<br>
+        axes[1].set_title('Image Variability')<br>
+        axes[1].imshow(image_var)<br>
+        plt.show()<br>
+
+* joblib
+    * used for storing and loading data
+    * example:
+        * joblib.dump(value=image_shape, filename=f"{file_path}/image_shape.pkl")
+* keras
+    * used for building and training the neural network
+    * example: 
+        * model.add(Conv2D(filters=64, kernel_size=(3,3), input_shape=input_shape, activation='relu',))
+* PIL (Python Imaging Library)
+    * used to perform various image-related operations in the code, such as opening, and resizing images
+    * example:
+        * img_pil = (Image.open(uploaded_file))
+* plotly
+    * used for data visualizations
+    * example:
+        *fig = px.bar(prob_per_class, x='Diagnostic', y=prob_per_class['Probability'], range_y=[0, 1], width=600, height=300, template='seaborn')
+* tensorflow
+    * used in the background for computations and training
+    * example"
+        * from tensorflow.keras.callbacks import EarlyStopping<br>
+        early_stop = EarlyStopping(monitor='val_loss', patience=7)
+
 
 ## Credits 
 

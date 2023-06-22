@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 import joblib
 import plotly.express as px
-import webbrowser
 import base64
 from datetime import datetime
 
