@@ -80,7 +80,9 @@ def load_model_and_predict(my_image, version):
 # the download_dataframe_as_csv function was taken from Code Institute Malaria Detector Sample Project
 # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/data_management.py
 def download_dataframe_as_csv(df):
-
+    """
+    Converts a DataFrame to a CSV file and generates a download link for it.
+    """
     datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
     csv = df.to_csv().encode()
     b64 = base64.b64encode(csv).decode()
@@ -91,6 +93,9 @@ def download_dataframe_as_csv(df):
     return href
 
 def powdery_mildew_detection_body():
+    """
+    Displays the mildew detection page of the Cherry Leaves Powdery Mildew Detector.
+    """
     st.info('* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.')
     st.write('* You can download a set of images containing pictures of both healthy leaves and leaves infected with powdery mildew by clicking [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).')
     st.write('---')

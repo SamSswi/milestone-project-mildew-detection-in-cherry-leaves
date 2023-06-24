@@ -4,6 +4,9 @@ import streamlit as st
 # https://malaria-predictor.onrender.com/
 
 def project_summary_page_body():
+    """
+    Displays the project summary page of the Cherry Leaves Powdery Mildew Detector.
+    """
     st.subheader('Quick Project Summary')
 
     st.info(

@@ -9,6 +9,9 @@ import random
 # https://malaria-predictor.onrender.com/
 
 def leaves_visualizer_body():
+    """
+    Displays the leaves visualizer page in the Streamlit app.
+    """
     # The usage of the 'subheader' method was inspired from the streamlit documentation 
     # https://docs.streamlit.io/library/api-reference/text
     st.subheader('Leaves Visualizer')
@@ -50,6 +53,9 @@ def leaves_visualizer_body():
 # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/02%20-%20DataVisualization.ipynb
 
 def image_montage_function(dir_path, label, nrows, ncols, figsize=(15, 10)):
+    """
+    Displays a montage of randomly sampled images from a specific label.
+    """
     sns.set_style("white")
     label_list = os.listdir(f'{dir_path}')
     # check if the requested montage size is greater than the subset size

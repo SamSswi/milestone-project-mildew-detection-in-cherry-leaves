@@ -7,6 +7,9 @@ import pandas as pd
 # https://malaria-predictor.onrender.com/
 
 def ml_perfomance_metrics_body():
+    """
+    Displays the performance metrics page of the Cherry Leaves Powdery Mildew Detector.
+    """
     st.title('Cherry Leaves Powdery Mildew Detector')
     version = 'v1'
     st.header('Train, Validation and Test Set: Label Frequencies')

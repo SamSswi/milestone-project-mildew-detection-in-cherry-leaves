@@ -4,6 +4,9 @@ import streamlit as st
 # https://malaria-predictor.onrender.com/
 
 def project_hypothesis_body():
+    """
+    Displays the project hypothesis page of the Cherry Leaves Powdery Mildew Detector.
+    """
     st.subheader('Project Hypotheses and Validations')
 
     st.success(
