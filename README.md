@@ -210,20 +210,32 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
+* Dashboard
+    * [Code Institute Malaria Detector sample project](https://malaria-predictor.onrender.com/) - dashboard design
+* Leaves Visualizer Page:
+    * [Streamlit Documentation](https://docs.streamlit.io/library/api-reference/widgets/st.checkbox) - st.checkbox function
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualisation Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/02%20-%20DataVisualization.ipynb) - image montage function
+* ML Performance Page
+    * [Code Institue Malaria Detector Walkthrough Sample Project - ML Performance Metrics dashboard page](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/page_ml_performance.py) - st.columns function usage
+* Multipage
+    * [Code Institute's Malaria Detection Sample Project - multipage.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/multipage.py)
+* Powdery Mildew Detection Page
+    * [Code Institute Malaria Detector Sample Project - predictive_analysis.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py) - plot_predictions_probabilities function
+    * [Code Institute Malaria Detector Sample Project - predictive_analysis.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py) - resize_input_image function
+    * [Code Institute Malaria Detector Sample Project - predictive_analysis.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py) - load_model_and_predict function
+    * [Code Institute Malaria Detector Sample Project - data_management.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/data_management.py) - download_dataframe_as_csv function
+    * [Streamlit Documentation](https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader) - st.file_uploader function usage
+    * [Code Institute Malaria Detector Sample Project - page_malaria_detector.py](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/page_malaria_detector.py) - powdery_mildew_detection_body > if statement
+* Data Collection Notebook
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Collection Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - import, clean and split the dataset
+* Data Visualization Notebook
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories, calculate average image size, save image shape, difference between the average images calculation, image montage creation
+    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - label frequency DataFrame and Barplot, Average Image and Image Variability calculation
+* Modelling and Evaluation Notebook
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Modelling and Evaluating Notebook](https://github.com/SamSswi/WalkthroughProject01DataAnalytics/blob/main/jupyter_notebooks/03%20-%20Modelling%20and%20Evaluating.ipynb) - load files from the output folder, image augmentation, augmented images plotting, early stopping, model evaluation, prediction on unknown data
+    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - model creation, network structure visualizing, model training, model saving, model learning curve, 
+    * [Numpy Documentation](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html) - np.argmax function usage
 
 
 ## Acknowledgements (optional)

@@ -12,8 +12,7 @@ def leaves_visualizer_body():
     """
     Displays the leaves visualizer page in the Streamlit app.
     """
-    # The usage of the 'subheader' method was inspired from the streamlit documentation 
-    # https://docs.streamlit.io/library/api-reference/text
+    
     st.subheader('Leaves Visualizer')
     st.info('The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.')
     
