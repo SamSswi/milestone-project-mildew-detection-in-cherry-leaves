@@ -1,5 +1,8 @@
 import streamlit as st
 
+# The design of this dashboard page is inspired by the Project Hypothesis page From the Code Institute Malaria Detector sample project.
+# https://malaria-predictor.onrender.com/
+
 def project_hypothesis_body():
     st.subheader('Project Hypotheses and Validations')
 

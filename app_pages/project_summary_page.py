@@ -1,5 +1,7 @@
 import streamlit as st
-import matplotlib.pyplot as pyplot
+
+# The design of this dashboard page is inspired by the Quick Project Summary page From the Code Institute Malaria Detector sample project.
+# https://malaria-predictor.onrender.com/
 
 def project_summary_page_body():
     st.subheader('Quick Project Summary')

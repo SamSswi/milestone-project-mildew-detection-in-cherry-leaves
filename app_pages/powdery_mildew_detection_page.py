@@ -10,10 +10,11 @@ import plotly.express as px
 import base64
 from datetime import datetime
 
-# from src.data_management import download_dataframe_as_csv
-# from src.predictive_analysis import load_model_and_predict, resize_input_image, plot_predictions_probabilities
+# The design of this dashboard page is inspired by the Malaria Detection page From the Code Institute Malaria Detector sample project.
+# https://malaria-predictor.onrender.com/
 
-
+# the plot_predictions_probabilities function was taken from Code Institute Malaria Detector Sample Project
+# https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py
 
 def plot_predictions_probabilities(pred_proba, pred_class):
     """
@@ -40,6 +41,9 @@ def plot_predictions_probabilities(pred_proba, pred_class):
         width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
 
+# the resize_input_image function was taken from Code Institute Malaria Detector Sample Project
+# https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py
+
 def resize_input_image(img, version):
     """
     Reshape image to model image size
@@ -50,6 +54,9 @@ def resize_input_image(img, version):
     my_image = np.expand_dims(img_resized, axis=0)/255
 
     return my_image
+
+# the load_model_and_predict function was taken from Code Institute Malaria Detector Sample Project
+# https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/machine_learning/predictive_analysis.py
 
 def load_model_and_predict(my_image, version):
     """
@@ -70,6 +77,7 @@ def load_model_and_predict(my_image, version):
 
     return pred_proba, pred_class
 
+# the download_dataframe_as_csv function was taken from Code Institute Malaria Detector Sample Project
 # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/src/data_management.py
 def download_dataframe_as_csv(df):
 
@@ -87,12 +95,12 @@ def powdery_mildew_detection_body():
     st.write('* You can download a set of images containing pictures of both healthy leaves and leaves infected with powdery mildew by clicking [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).')
     st.write('---')
 
+    # the idea to use the 'st.file_uploader' function was taken from streamlit documentation
+    # https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader
     uploaded_files = st.file_uploader("Upload leaf samples. You may select more than one.", accept_multiple_files=True, type=['jpg'])
-    # for uploaded_file in uploaded_files:
-    #     model = load_model('/workspace/milestone-project-mildew-detection-in-cherry-leaves/outputs/v1/cherry_mildew_detector_model.h5')
-    #     p_image = image.load_img(f"{test_path}/{p_label}/{os.listdir(test_path+'/'+p_label)[index]}", target_size=image_shape, color_mode='rgb')
-    # print(f'Image shape: {p_image.size}, Image mode: {p_image.mode}')
 
+    # The following if statement was adapted from Code Institute's Malaria Detection Sample Project
+    # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/page_malaria_detector.py
     if uploaded_files is not None:
         data_list = []
         for uploaded_file in uploaded_files:

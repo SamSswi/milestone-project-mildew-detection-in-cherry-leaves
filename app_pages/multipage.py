@@ -1,4 +1,5 @@
-# https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/d186ae95191f48e9a2151559c7e6f85d/fc2f9892cfa44eee9cc8bf585c21df88/4?activate_block_id=block-v1%3Acode_institute%2BCI_DA_ML%2B2021_Q4%2Btype%40vertical%2Bblock%407636b337caeb4035bd7b5568404802f6
+# The code in this file was taken from Code Institute's Malaria Detection Sample Project
+# https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/multipage.py
 import streamlit as st
 
 

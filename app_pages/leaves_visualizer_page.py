@@ -1,18 +1,20 @@
 import streamlit as st
 import os
-import pandas as pd
-import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
 import random
 
+# The design of this dashboard page is inspired by the Cells Visualiser page From the Code Institute Malaria Detector sample project.
+# https://malaria-predictor.onrender.com/
 
-def leaves_visualizer_body(): 
+def leaves_visualizer_body():
+    # The usage of the 'subheader' method was inspired from the streamlit documentation 
     # https://docs.streamlit.io/library/api-reference/text
     st.subheader('Leaves Visualizer')
     st.info('The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.')
-
+    
+    # The usage of the 'checkbox' elements was inspired from the streamlit documentation 
     # https://docs.streamlit.io/library/api-reference/widgets/st.checkbox
     difference_avr_var = st.checkbox('Difference between the average and variability image')
     version = 'v1'
@@ -34,18 +36,18 @@ def leaves_visualizer_body():
     image_montage = st.checkbox('Image Montage')
     if image_montage:
         st.write("* To create of refresh the montage click on the 'Create Montage' button.")
-        # st.write('Please select a label')
         dir_path = 'inputs/cherry_leaves/cherry-leaves/validation'
         label_option = st.selectbox(
             'Please select a label',
             os.listdir(f'{dir_path}'))
         if st.button('Create Montage'):
-            # st.write(f'{label_option}')
             image_montage_function(dir_path=dir_path, label=label_option, nrows=5, ncols=3, figsize=(10, 10))
             st.write('---')
         else:
             st.write('')
 
+# The following function taken was adapted from Code Institue Malaria Detector Walkthrough Sample Project
+# https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/02%20-%20DataVisualization.ipynb
 
 def image_montage_function(dir_path, label, nrows, ncols, figsize=(15, 10)):
     sns.set_style("white")

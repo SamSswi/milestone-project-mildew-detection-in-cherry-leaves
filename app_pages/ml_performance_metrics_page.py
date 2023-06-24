@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import joblib
 import pandas as pd
 
+# The design of this dashboard page is inspired by the ML Performance Metrics page From the Code Institute Malaria Detector sample project.
+# https://malaria-predictor.onrender.com/
+
 def ml_perfomance_metrics_body():
     st.title('Cherry Leaves Powdery Mildew Detector')
     version = 'v1'
@@ -10,6 +13,7 @@ def ml_perfomance_metrics_body():
     label_distribution = plt.imread(f'outputs/{version}/labels_distribution_plot.png')
     st.image(label_distribution, caption='Labels Distribution on Train, Validation and Test Sets')
     st.header('Model History')
+    # The idea to use columns is taken from ML Performance Metrics dashboard page of Code Institute Malaria Detector sample project.
     # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/page_ml_performance.py
     col1, col2 = st.columns(2)
     with col1:
