@@ -135,6 +135,19 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
+* **False Positive Results:**
+    * While the model performs well on the images provided by the client, it's important to note that when applied to images outside the dataset, particularly those with artificial light reflecting off the leaf surface, the model occasionally yields false positives due to the challenges posed by such lightning conditions. None of the images supplied by the client exhibit this specific issue, though. So it is not a critical concern for this application. 
+
+* **Dependency on User-Provided Images**
+    * While the model predicted well on lower resolution images, as well as images with a certain amount of noise or slight blur, it is important to know the model accuracy still depends on the quality and suitability of the images provided by the user. If the uploaded images are of poor quality, contain excessive noise, or do not clearly depict the cherry leaf, the diagnostic results might be affected.
+* **Model Size and Deployment**
+    * CNN
+* **Heroku**
+    * Limited Storage and Performance
+* **CNN**
+    * Limited Contextual Understanding
+    * Limited Robustness to Adversarial Attacks
+
 ## Deployment
 ### Heroku
 
