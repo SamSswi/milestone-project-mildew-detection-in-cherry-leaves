@@ -145,7 +145,7 @@ To save time in this process, the IT team suggested an ML system that detects in
     * Model Accuracy and Loss table - pkl
 
 ## Testing
-I installed and ran Flake8 from the terminal for testing the python files in the "app_pages" folder. The issues primarily consisted of missing whitespace, trainling white space and lines that exceeded the recommended length. I successfully solved all the issues identified by Flake8.
+I installed and ran Flake8 from the terminal for testing the python files in the "app_pages" folder. The issues primarily consisted of missing whitespace, trainling white space and lines that exceeded the recommended length. I successfully solved all the issues identified by Flake8 except for cases where solving the issue would compromise the application functionality like for example: the line was too long because of a link or an imported function path.
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.

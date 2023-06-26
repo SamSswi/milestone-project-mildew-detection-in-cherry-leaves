@@ -14,7 +14,7 @@ def leaves_visualizer_body():
     Displays the leaves visualizer page in the Streamlit app.
     """
 
-    st.subheader('Leaves Visualizer')
+    st.subheader('Cherry Leaves Visualizer')
     st.info(
         'The client is interested in conducting a study to visually '
         'differentiate a cherry leaf that is healthy from one that '
@@ -52,7 +52,7 @@ def leaves_visualizer_body():
 
     difference_avr_labels = st.checkbox(
         'Difference between the average image of healthy leaves and '
-        'powdery mildew infected leaves')
+        'powdery mildew affected leaves')
     if difference_avr_labels:
         difference_labels = plt.imread(
             f'outputs/{version}/difference_image.png')
