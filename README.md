@@ -144,6 +144,8 @@ To save time in this process, the IT team suggested an ML system that detects in
     * Model History: Accuracy and Loss Line Graph  - image
     * Model Accuracy and Loss table - pkl
 
+## Testing
+I installed and ran Flake8 from the terminal for testing the python files in the "app_pages" folder. The issues primarily consisted of missing whitespace, trainling white space and lines that exceeded the recommended length. I successfully solved all the issues identified by Flake8.
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
@@ -254,15 +256,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Data Collection Notebook
     * [Code Institue Malaria Detector Walkthrough Sample Project - Data Collection Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - import, clean and split the dataset
 * Data Visualization Notebook
-    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories, calculate average image size, save image shape, difference between the average images calculation, image montage creation
-    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - label frequency DataFrame and Barplot, Average Image and Image Variability calculation
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories, calculate average image size, save image shape, difference between the average images calculation, image montage creation.
+    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - label frequency DataFrame and Barplot, Average Image and Image Variability calculation.
 * Modelling and Evaluation Notebook
-    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories
-    * [Code Institue Malaria Detector Walkthrough Sample Project - Modelling and Evaluating Notebook](https://github.com/SamSswi/WalkthroughProject01DataAnalytics/blob/main/jupyter_notebooks/03%20-%20Modelling%20and%20Evaluating.ipynb) - load files from the output folder, image augmentation, augmented images plotting, early stopping, model evaluation, prediction on unknown data
-    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - model creation, network structure visualizing, model training, model saving, model learning curve, 
-    * [Numpy Documentation](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html) - np.argmax function usage
-    * [medium.com](https://medium.com/onfido-tech/adversarial-attacks-and-defences-for-convolutional-neural-networks-66915ece52e7) - Unfixed Bugs - CNN shortcomings
-
-
-## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Data Visualization Notebook](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/jupyter_notebooks/01%20-%20DataCollection.ipynb) - set input and output directories.
+    * [Code Institue Malaria Detector Walkthrough Sample Project - Modelling and Evaluating Notebook](https://github.com/SamSswi/WalkthroughProject01DataAnalytics/blob/main/jupyter_notebooks/03%20-%20Modelling%20and%20Evaluating.ipynb) - load files from the output folder, image augmentation, augmented images plotting, early stopping, model evaluation, prediction on unknown data.
+    * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - model creation, network structure visualizing, model training, model saving, model learning curve. 
+    * [Numpy Documentation](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html) - np.argmax function usage.
+    * [medium.com](https://medium.com/onfido-tech/adversarial-attacks-and-defences-for-convolutional-neural-networks-66915ece52e7) - Unfixed Bugs - CNN shortcomings.
