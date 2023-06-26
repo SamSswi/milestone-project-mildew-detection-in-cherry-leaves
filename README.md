@@ -1,6 +1,6 @@
 # Cherry Leaf Mildew Detector
 
-[Cherry Leaf Mildew Detector Live Application]()
+[Cherry Leaf Mildew Detector Live Application](https://cherry-leaves-mildew-detector-1936274102f0.herokuapp.com/)
 
 This machine learning project was undertaken for my fifth project with the Code Institute, which was part of the Predictive Analytics module. The task was set to build an ML pipeline which would predict if a cherry leaf is healthy or contains powdery mildew. The machine learning task was utilising a deep learning neural neural network for prediction. 
 
@@ -165,16 +165,15 @@ I installed and ran Flake8 from the terminal for testing the python files in the
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+The App live link is: [Cherry Leaver Mildew Detector](https://cherry-leaves-mildew-detector-1936274102f0.herokuapp.com/) 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
 
+* The project was deployed to Heroku using the following steps.
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
+3. Select the  repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
+5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access the App.
 
 
 ## Main Data Analysis and Machine Learning Libraries
