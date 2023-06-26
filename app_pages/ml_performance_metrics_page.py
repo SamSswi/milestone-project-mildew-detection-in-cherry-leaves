@@ -18,7 +18,7 @@ def ml_perfomance_metrics_body():
     st.header('Model History')
     # The idea to use columns is taken from ML Performance Metrics dashboard page of Code Institute Malaria Detector sample project.
     # https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/app_pages/page_ml_performance.py
-    col1, col2 = st.columns(2)
+    col1, col2 = st.beta_columns(2)
     with col1:
         model_accuracy = plt.imread(f'outputs/{version}/model_training_acc.png')
         st.image(model_accuracy, caption='Model Training Accuracy')
