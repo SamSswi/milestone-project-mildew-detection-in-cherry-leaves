@@ -1,20 +1,33 @@
-Welcome,
+# Cherry Leaf Mildew Detector
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+[Cherry Leaf Mildew Detector Live Application]()
 
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
+This machine learning project was undertaken for my fifth project with the Code Institute, which was part of the Predictive Analytics module. The task was set to build an ML pipeline which would predict if a cherry leaf is healthy or contains powdery mildew. The machine learning task was utilising a deep learning neural neural network for prediction. 
 
-## Gitpod Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## CRISP-DM workflow (Cross Industry Standard Process for Data Mining)
+The project uses CRISP-DM workflow
+* Business Understanding
+    * How will the client benefit from using the model?
+    * Is there sufficient data available to satisfy the Business Requirements?
+    * What does success look like? How will it be measured?
+    * What tooling or technologies will be required (Dashboard or API)?
+* Data Understanding
+    * Access and load the data
+* Data Preparation
+    * Remove non-image files
+    * Split the data into Train, Validation and Test Sets
+* Modelling
+    * What modelling task is required
+    * Perform Image Augmentation on the Train set Images
+    * Rescale the Validation and Test set Images 
+    * Fit data to trainset using default parameters
+    * Iterate the following process until the model meets the accuracy level asked by the client:
+        * Evaluate performance of hyperparameters
+        * Adjust the hyperparameter choices/values
+* Evaluation
+    * Does the model meet the Business Requirements?
+    * Explain results via metrics and visualizations
+    * Deploy the model
 
 
 ## Dataset Content
@@ -140,13 +153,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 * **Dependency on User-Provided Images**
     * While the model predicted well on lower resolution images, as well as images with a certain amount of noise or slight blur, it is important to know the model accuracy still depends on the quality and suitability of the images provided by the user. If the uploaded images are of poor quality, contain excessive noise, or do not clearly depict the cherry leaf, the diagnostic results might be affected.
+
 * **Model Size and Deployment**
-    * CNN
-* **Heroku**
-    * Limited Storage and Performance
-* **CNN**
-    * Limited Contextual Understanding
-    * Limited Robustness to Adversarial Attacks
+    * Convolutional Neural Networks can be computationally intensive, particularly when processing large images. Heroku has limited CPU resources on lower tier plans, which can impact the model prediction speed.
+
+* **Convolutional Neural Network**
+    * Limited Robustness to Adversarial Attacks - The model can be mislead into making incorrect predictions if subtle modifications are deliberately made to the input images, like for example imperceptible noise or pattern. By their nature the CNNs are susceptible to such attacks.
 
 ## Deployment
 ### Heroku
@@ -249,6 +261,7 @@ To save time in this process, the IT team suggested an ML system that detects in
     * [Code Institue Malaria Detector Walkthrough Sample Project - Modelling and Evaluating Notebook](https://github.com/SamSswi/WalkthroughProject01DataAnalytics/blob/main/jupyter_notebooks/03%20-%20Modelling%20and%20Evaluating.ipynb) - load files from the output folder, image augmentation, augmented images plotting, early stopping, model evaluation, prediction on unknown data
     * [Code Institute Data Analytics Packages Lesson, TensorFlow Unit 10: Image Classification](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/b6cf6ce506324501bcf6aa0f31e0c20c/) - model creation, network structure visualizing, model training, model saving, model learning curve, 
     * [Numpy Documentation](https://numpy.org/doc/stable/reference/generated/numpy.argmax.html) - np.argmax function usage
+    * [medium.com](https://medium.com/onfido-tech/adversarial-attacks-and-defences-for-convolutional-neural-networks-66915ece52e7) - Unfixed Bugs - CNN shortcomings
 
 
 ## Acknowledgements (optional)
