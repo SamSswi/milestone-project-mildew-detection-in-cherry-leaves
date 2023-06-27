@@ -3,7 +3,7 @@
 ![Preview of dashboard on different screens](./assets/images/Dashboard.jpg)
 [Cherry Leaf Mildew Detector Live Application](https://cherry-leaves-mildew-detector-1936274102f0.herokuapp.com/)
 
-This machine learning project was undertaken for my fifth project with the esteemed Code Institute, as part of the Predictive Analytics module. The objective at hand was to construct an ML pipeline that would serve as a reliable arbiter, distinguishing between healthy cherry leaves and cherry leaves that have powdery mildew. To accomplish this, a deep-learning neural network was employed to make accurate and insightful predictions.
+This machine learning project was undertaken for my fifth project with the esteemed Code Institute, as part of the Predictive Analytics module. The objective at hand was to construct an ML pipeline that would serve as a reliable arbiter, distinguishing between healthy cherry leaves and cherry leaves that have powdery mildew. To accomplish this, a deep-learning neural network was employed to make accurate predictions.
 
 ## CRISP-DM workflow (Cross Industry Standard Process for Data Mining)
 The project uses CRISP-DM workflow
@@ -110,7 +110,7 @@ To save time in this process, the IT team suggested an ML system that detects in
     * Business Requirements list - block of information
 
 * Page 2: Leaves Visualizer
-    * The business requirement this page answers - block of information
+    * The business requirement this page answers - Business Requirement 1 - block of information
     * Checkbox1 - Difference between average and variability image
         * Short explanation of the data visualization result - information block
         * Relevant image - image
@@ -123,7 +123,7 @@ To save time in this process, the IT team suggested an ML system that detects in
         * Create Montage button
             * The image montage of the selected label
 * Page 3: Cherry Leaves Powdery Mildew Detector
-    * The business requirement this answers - block of information
+    * The business requirement this answers - Business Requirement 2 - block of information
     * Link to the download images of cherry leaves - block of information
     * horizontal line
     * File uploader where the user can upload cherry leaf images in order to get a diagnosis on them
