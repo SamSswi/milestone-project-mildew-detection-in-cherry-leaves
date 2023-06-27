@@ -24,8 +24,8 @@ def project_summary_page_body():
         'are often puckered or distorted.\n'
         '* Season long disease control is critical to minimize overall disease'
         ' pressure in the orchard and consequently to protect developing '
-        'fruit from accumulating spores on their surfaces.\n'
-        '**Project Dataset** \n'
+        'fruit from accumulating spores on their surfaces. \n'
+        '\n **Project Dataset** \n'
         '* The available dataset contains 4208 images of healthy cherry tree '
         'leaves and cherry tree leaves infected with powdery mildew.'
     )

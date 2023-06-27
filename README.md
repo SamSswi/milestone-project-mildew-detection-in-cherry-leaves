@@ -1,5 +1,6 @@
 # Cherry Leaf Mildew Detector
 
+![Preview of dashboard on different screens](./assets/images/Dashboard.jpg)
 [Cherry Leaf Mildew Detector Live Application](https://cherry-leaves-mildew-detector-1936274102f0.herokuapp.com/)
 
 This machine learning project was undertaken for my fifth project with the Code Institute, which was part of the Predictive Analytics module. The task was set to build an ML pipeline which would predict if a cherry leaf is healthy or contains powdery mildew. The machine learning task was utilising a deep learning neural neural network for prediction. 
@@ -31,7 +32,7 @@ The project uses CRISP-DM workflow
 
 
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). I then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). Then, a fictitious user story was created where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains 4208 images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 
@@ -49,15 +50,14 @@ To save time in this process, the IT team suggested an ML system that detects in
     * Validation: The Average Image and Variability Image revealed subtle hints the powdery mildew-affected leaves have pale speckles on them The Difference between Averages study did not reveal any clear pattern to differentiate between the two labels. An Image Montage shows that typically the cherry leaves that have powdery mildew, have superficial white growths and in some cases, their shape is deformed.
 
 * Hypothesis 2: Neural Networks can effectively map the relationships between the features extracted from cherry leaf images and the corresponding labels (healthy or powdery mildew).
-    * Validation: A Convolutional Neural Network was used to map the relationships between the features extracted from cherry leaf images and the corresponding labels (healthy or powdery mildew). The usage of a Convolutional Neural Network was justified by its main advantages as efficient image processing, high accuracy rates, robustness to noise, and automated feature extraction. The trained Neural Network has an accuracy of 99.88% on the unseen data from the test set.
+    * Validation: A Convolutional Neural Network was used to map the relationships between the features extracted from cherry leaf images and the corresponding labels (healthy or powdery mildew). The usage of a Convolutional Neural Network was justified by its main advantages as efficient image processing, high accuracy rates, robustness to noise, and automated feature extraction. The trained Neural Network has an accuracy of 99.76% on the unseen data from the test set.
 * Hypothesis 3: Reducing the image shape to smaller dimensions (e.g., 100x100 or 50x50) will not significantly impact the model's performance in terms of accuracy.
-    * The model was trained on images resized to 100x100px, and the accuracy of its performance on new unknown data was 99.88%.
+    * The model was trained on images resized to 100x100px, and the accuracy of its performance on new unknown data was 99.76%.
 * Hypothesis 4: The model performance meets the project requirement of 97% accuracy, as agreed upon with the client.
-    * After the evaluation of the model on a separate test dataset, the accuracy of the model was 99.88%. These metrics satisfy the requirement of 97% accuracy.
+    * After the evaluation of the model on a separate test dataset, the accuracy of the model was 99.76%. These metrics satisfy the requirement of 97% accuracy.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
 * 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
     * As a Data Practitioner I can clean and prepare the collected data then split it into training, validation, and test sets so that further analysis and model training can be done on it.
@@ -70,7 +70,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
 1. What are the business requirements?
     * The client is interested to visually differentiate between healthy cherry leaves and cherry leaves that have powdery mildew.
@@ -103,9 +102,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
-
 
 * Page 1: Project Summary
     * General Inforamtion - block of information
@@ -148,7 +144,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 I installed and ran Flake8 from the terminal for testing the python files in the "app_pages" folder. The issues primarily consisted of missing whitespace, trainling white space and lines that exceeded the recommended length. I successfully solved all the issues identified by Flake8 except for cases where solving the issue would compromise the application functionality like for example: the line was too long because of a link or an imported function path.
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 * **False Positive Results:**
     * While the model performs well on the images provided by the client, it's important to note that when applied to images outside the dataset, particularly those with artificial light reflecting off the leaf surface, the model occasionally yields false positives due to the challenges posed by such lightning conditions. None of the images supplied by the client exhibit this specific issue, though. So it is not a critical concern for this application. 
@@ -177,9 +172,8 @@ The App live link is: [Cherry Leaver Mildew Detector](https://cherry-leaves-mild
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
-* Python Standard Library - 
+* Python Standard Library
 * streamlit
     * used for building the dashboard
     * example:

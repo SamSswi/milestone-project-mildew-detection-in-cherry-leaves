@@ -108,10 +108,19 @@ def powdery_mildew_detection_body():
     """
     st.info(
         '* The client is interested in predicting if a cherry leaf is '
-        'healthy or contains powdery mildew.')
+        'healthy or contains powdery mildew. \n'
+        '* The model used to predict whether a cherry leaf is healthy '
+        'or is affected by powdery mildew, was trained using a '
+        'deep-learning Convolutional Neural Network \n'
+        '* It has predicted with an accuracy above 99% whether a '
+        'cherry leaf has powdery mildew or is healthy \n'
+        '* This model satisfies the second Business Requirement. '
+        'It has been successful in answering the predictive task '
+        'it was intended to address.')
+
     st.write(
         '* You can download a set of images containing pictures of both '
-        'healthy leaves and leaves infected with powdery mildew by '
+        'healthy leaves and leaves that contain powdery mildew by '
         'clicking '
         '[here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).')
     st.write('---')
