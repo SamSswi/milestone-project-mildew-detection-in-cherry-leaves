@@ -3,7 +3,7 @@
 ![Preview of dashboard on different screens](./assets/images/Dashboard.jpg)
 [Cherry Leaf Mildew Detector Live Application](https://cherry-leaves-mildew-detector-1936274102f0.herokuapp.com/)
 
-This machine learning project was undertaken for my fifth project with the Code Institute, which was part of the Predictive Analytics module. The task was set to build an ML pipeline which would predict if a cherry leaf is healthy or contains powdery mildew. The machine learning task was utilising a deep learning neural neural network for prediction. 
+This machine learning project was undertaken for my fifth project with the esteemed Code Institute, as part of the Predictive Analytics module. The objective at hand was to construct an ML pipeline that would serve as a reliable arbiter, distinguishing between healthy cherry leaves and cherry leaves that have powdery mildew. To accomplish this, a deep-learning neural network was employed to make accurate and insightful predictions.
 
 ## CRISP-DM workflow (Cross Industry Standard Process for Data Mining)
 The project uses CRISP-DM workflow
